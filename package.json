@@ -1,0 +1,17 @@
+{
+  "name": "mdddd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.1.4",
+    "commander": "^2.9.0",
+    "highlight.js": "^9.9.0",
+    "marked": "^0.3.6"
+  }
+}
