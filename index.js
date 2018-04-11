@@ -22,7 +22,8 @@ program.version('0.0.1')
 
 const fileName = program.args[0];
 const pathName = program.args[1] || './';
-const filePath = path.resolve(process.cwd(), pathName, fileName);
+
+const filePath = path.resolve(process.cwd(), fileName);
 
 if(!filePath) {
     throw new Error('file is inexistence！');
@@ -55,7 +56,7 @@ async.waterfall([
 
         const title = (program.title || _filePathParse.name);
         const rightText = htmlTitle(htmlCode, highlightJsPath, highlightCSSPath, markdownCSSPath, title);
-        fs.writeFile(_filePathParse.name + '.html', rightText, callback);
+        fs.writeFile(path.resolve(process.cwd(), pathName, _filePathParse.name + '.html'), rightText, callback);
     }
 ], (err) => {
     if(err) throw err;
