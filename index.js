@@ -13,7 +13,7 @@ const marked = require('./lib/marked');
 const htmlTitle = require('./lib/title');
  
 program.version('1.1.1')
-    .usage('[options] <file ...>')
+    .usage('[options] <file ...> [htmlPath]')
     .option('-j, --highlight_js_path <value>', 'modify highlight-js-path')
     .option('-c, --highlight_css_path <value>', 'modify highlight-css-path')
     .option('-m, --markdown_css_path <value>', 'modify markdown-css-path')
