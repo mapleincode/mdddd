@@ -12,7 +12,7 @@ const fs = require('fs');
 const marked = require('./lib/marked');
 const htmlTitle = require('./lib/title');
  
-program.version('0.0.1')
+program.version('1.1.1')
     .usage('[options] <file ...>')
     .option('-j, --highlight_js_path <value>', 'modify highlight-js-path')
     .option('-c, --highlight_css_path <value>', 'modify highlight-css-path')
