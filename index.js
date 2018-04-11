@@ -21,7 +21,8 @@ program.version('0.0.1')
     .parse(process.argv);
 
 const fileName = program.args[0];
-const filePath = path.resolve(process.cwd(), fileName);
+const pathName = program.args[1] || './';
+const filePath = path.resolve(process.cwd(), pathName, fileName);
 
 if(!filePath) {
     throw new Error('file is inexistence！');
